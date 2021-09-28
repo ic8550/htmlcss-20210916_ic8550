@@ -9,8 +9,8 @@
 
 .histogram__bars {
   display: flex;
-  justify-content: stretch;
-  flex-wrap: nowrap;
+  /* justify-content: stretch; */
+  /* flex-wrap: nowrap; */
   width: 100%;
   align-items: flex-end;
   flex-direction: row;
