@@ -2,21 +2,16 @@
 
 .histogram {
   box-sizing: border-box;
-  width: 354px;
-  height: 185px;
   border: 1px solid #acb5bd;
   border-radius: 8px;
 }
 
 .histogram__container {
   box-sizing: border-box;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 16px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 16px 24px 24px;
 }
 
 .histogram__header {
@@ -40,8 +35,6 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-  /* Black */
   color: #212429;
   opacity: 0.8;
 }
@@ -53,8 +46,6 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-  /* Black */
   color: #4263eb;
   opacity: 0.8;
 }
@@ -70,30 +61,22 @@
   color: #212429;
 }
 
+.histogram__visual {
+  margin-top: 16px;
+}
+
 .histogram__bars {
-  border: 1px solid red;
-  margin-bottom: 24px;
+  box-sizing: border-box;
+  border: 5px solid red;
+  /* height: 0px; */
+  flex: 1 1 70px;
   display: flex;
-  /* flex-direction: column-reverse; */
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
   align-items: flex-end;
 }
 
-.bar__container {
-  height: 30%;
-  margin: 0 0.5px 0;
-  border: 3px solid lightgreen;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-grow: 1;
-}
-
 .histogram__bar {
-  /* min-height: 30px; */
-  border: 1px solid #4263eb;
+  box-sizing: border-box;
   background-color: #4263eb;
+  border: 5px solid yellow;
+  flex: 1 1 30px;
 }
