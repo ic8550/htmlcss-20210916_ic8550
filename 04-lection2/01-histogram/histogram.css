@@ -1,26 +1,35 @@
-.histogram {
-  width: 100%;
-  border: 1px solid #acb5bd;
+html {
   box-sizing: border-box;
-  border-radius: 8px;
+  height: 50%;
+  border: 5px solid red;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  border: 5px solid green;
+}
+
+.histogram {
+  box-sizing: border-box;
+  height: 100%;
   background-color: #ffffff;
+  border: 5px solid blue;
+  border-radius: 8px;
   padding: 16px 24px 24px 24px;
 }
 
 .histogram__bars {
+  box-sizing: border-box;
+  border: 5px solid yellow;
+  height: 70%;
   display: flex;
-  /* justify-content: stretch; */
-  /* flex-wrap: nowrap; */
-  width: 100%;
   align-items: flex-end;
-  flex-direction: row;
-  height: 150px;
 }
 
 .histogram__bar {
-  /* flex: 1 0 20px; */
-  flex-grow: 1;
-  flex-basis: 50px;
+  box-sizing: border-box;
+  flex: 1 1 20px;
   margin-right: 1px;
   background: #4263eb;
 }
@@ -40,6 +49,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #212429;
+  box-sizing: border-box;
   opacity: 0.8;
 }
 
